@@ -38,3 +38,50 @@
     background-color: #1B1B1B;
     padding: 60px;
   }
+
+  @media (max-width: 576px){
+    .gridContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+
+    .welcome{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background-color: #33A8DD;
+        padding: 80px;
+    }
+
+    .leftTitle{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        background-color: #F7F5F6;
+        color: black;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-bottom: 10px;
+    }
+
+    .middleTitle{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        background-color: #F7F5F6;
+        color: black;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-bottom: 10px;
+    }
+
+    .rightTitle{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        background-color: #F7F5F6;
+        color: black;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-bottom: 10px;
+    }
+    
+  }
